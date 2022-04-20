@@ -4,7 +4,14 @@ let startingValue = document.getElementById("starting-value");
 let outcome = document.getElementById("outcome");
 let myChart;
 
+document.getElementById("calculate").addEventListener("click", function (e) {
+    e.preventDefault();
+    calculate();
+})
+
+
 function calculate() {
+
 
     let cycles = parseFloat(cycleCount.value);
     let growth = parseFloat(growthRate.value);
